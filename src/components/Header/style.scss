@@ -1,0 +1,67 @@
+@use 'sass:list';
+@use '../../style/variables';
+
+.header {
+    display: flex;
+    justify-content: center;
+
+}
+
+.header__container {
+    width: 1097px;
+    height: 119px;
+    padding: 40px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.header__nav {
+    display: flex;
+    gap: 30px;
+    transition: all 0.3s;
+
+    .nav__link {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+.header__button--login {
+    padding: 13.5px 46px;
+    border: 1px solid variables.$light-background;
+
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.hamburger {
+    width: 66px;
+    height: 53px;
+    padding: 13.25px 11px;
+
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 7px;
+
+    cursor: pointer;
+
+    .hamburger__line {
+        height: 5px;
+
+        background-color: variables.$light-background;
+
+        $lines: (('.line--1', 100%), ('.line--2', 66%), ('.line--3', 33%));
+
+        @each $line in $lines {
+            &#{list.nth($line, 1)} {
+                width: list.nth($line, 2);
+            }
+        }
+    }
+}

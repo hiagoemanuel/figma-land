@@ -9,6 +9,17 @@
 body {
     font-family: variables.$font;
     color: variables.$white-text;
-    
+
     background: variables.$dark-background;
+}
+
+a {
+    color: variables.$white-text;
+    font-weight: 500;
+    text-decoration: none;
+}
+button {
+    outline: none;
+    border: none;
+    color: variables.$white-text;
 }
