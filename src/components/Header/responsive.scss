@@ -8,7 +8,7 @@
     .header__nav {
         display: none;
 
-        &.hamburger--active {
+        &.nav--menu-active {
             padding: 10px;
 
             display: flex;
@@ -26,23 +26,19 @@
             a {
                 color: variables.$first-text;
             }
-
-            animation: onpening 0.3s ease-in-out;
-
-            @keyframes onpening {
-                from {
-                    transform: translateX(100px);
-                }
-
-                to {
-                    transform: translateX(0px);
-                }
-            }
         }
     }
 
     .hamburger {
         display: flex;
+
+        &.hamburger--active {
+
+            .line--2,
+            .line--3 {
+                width: 100%;
+            }
+        }
     }
 
     .header__button--login {
@@ -53,8 +49,8 @@
 @media (max-width: 525px) {
     .header__container {
         height: 107px;
-        padding: 10px;
-        gap: 0px;
+        padding: 5px;
+        gap: 5px;
     }
 
     .header__button--login {

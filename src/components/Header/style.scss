@@ -4,7 +4,6 @@
 .header {
     display: flex;
     justify-content: center;
-
 }
 
 .header__container {
@@ -22,7 +21,6 @@
 .header__nav {
     display: flex;
     gap: 30px;
-    transition: all 0.3s;
 
     .nav__link {
         padding: 10px;
@@ -50,11 +48,12 @@
     gap: 7px;
 
     cursor: pointer;
-
+    
     .hamburger__line {
         height: 5px;
-
+        
         background-color: variables.$light-background;
+        transition: 0.3s;
 
         $lines: (('.line--1', 100%), ('.line--2', 66%), ('.line--3', 33%));
 
