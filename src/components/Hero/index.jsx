@@ -1,4 +1,5 @@
 import './style.scss'
+import './responsive.scss'
 
 export const Hero = () => {
     return (
@@ -9,10 +10,13 @@ export const Hero = () => {
                     Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
                 </p>
             </div>
-            <duv className="hero__buttons">
+            <div className="hero__buttons">
                 <a className='button button--try-free' href='/'>Try For Free</a>
                 <a className='button button--learn-more' href='/'>Learn More</a>
-            </duv>
+            </div>
+            <div className='hero__background'>
+                <span></span>
+            </div>
         </section>
     )
 }
