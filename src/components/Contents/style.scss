@@ -1,0 +1,61 @@
+@use '../../style/mixins' as *;
+@use '../../style/variables';
+
+.contents {
+    @include section-size;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.contents__header {
+    @include section-title(557px);
+}
+
+.contents__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.card {
+    max-width: 475px;
+    height: 625px;
+
+    padding: 40px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: variables.$light-background;
+
+    .card__header {
+        text-align: center;
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: variables.$first-text;
+        }
+
+        p {
+            color: variables.$second-text;
+        }
+    }
+
+    .card__link {
+        text-align: center;
+        padding: 13.5px 45px;
+        background-color: variables.$primary-color;
+    }
+
+    .card__image {
+        width: 100%;
+    }
+}
