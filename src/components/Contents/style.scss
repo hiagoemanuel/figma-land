@@ -50,9 +50,7 @@
     }
 
     .card__link {
-        text-align: center;
-        padding: 13.5px 45px;
-        background-color: variables.$primary-color;
+        @include link-button(variables.$primary-color);
     }
 
     .card__image {

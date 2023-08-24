@@ -1,0 +1,59 @@
+@use '../../style/mixins' as *;
+
+.gallery {
+    @include section-size;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.gallery__header {
+    @include section-title(557px);
+}
+
+.gallery__link {
+    @include link-button;
+}
+
+.gallery__photos {
+    width: 92%;
+    padding: 0px 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+
+    .photos__row {
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 35px;
+
+        .photos__img {
+            max-width: 100%;
+
+            border-radius: 12px;
+
+            cursor: pointer;
+            transition: opacity 0.3s ease-in;
+
+            &:hover {
+                opacity: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .photos__img {
+        display: none;
+
+        &.img--fixed {
+            display: block;
+        }
+    }
+}

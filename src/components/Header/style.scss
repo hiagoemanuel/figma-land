@@ -1,5 +1,6 @@
 @use 'sass:list';
 @use '../../style/variables';
+@use '../../style/mixins' as *;
 
 .header {
     display: flex;
@@ -29,11 +30,7 @@
 }
 
 .header__button--login {
-    padding: 13.5px 46px;
-    border: 1px solid variables.$light-background;
-
-    background-color: transparent;
-    cursor: pointer;
+    @include link-button;
     font-size: 17px;
 }
 
@@ -48,10 +45,10 @@
     gap: 7px;
 
     cursor: pointer;
-    
+
     .hamburger__line {
         height: 5px;
-        
+
         background-color: variables.$light-background;
         transition: 0.3s;
 
