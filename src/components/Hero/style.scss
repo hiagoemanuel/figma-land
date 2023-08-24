@@ -4,8 +4,6 @@
 .hero {
     @include section-size;
 
-    margin-bottom: 85px;
-
     display: flex;
     flex-direction: column;
     align-items: center;

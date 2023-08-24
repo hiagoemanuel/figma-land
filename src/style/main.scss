@@ -24,3 +24,16 @@ button {
     border: none;
     color: variables.$white-text;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: variables.$tertiary-color;
+    border-radius: 3px;
+}
