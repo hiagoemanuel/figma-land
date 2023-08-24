@@ -1,0 +1,33 @@
+@use '../../style/mixins' as *;
+
+.partners {
+    @include section-size;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 50px;
+}
+
+.partners__header {
+    @include section-title(557px);
+}
+
+.partners__list {
+    padding: 0px 15px;
+
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    flex-wrap: wrap;
+}
+
+.partners__button {
+    @include link-button;
+}
+
+@media (max-width: 560px) {
+    .partners__list {
+        gap: 50px;
+    }
+}
