@@ -1,12 +1,12 @@
 import './style.scss'
 
 const partners = [
-    'public/assets/partners/apple-store.png',
-    'public/assets/partners/apiary.png',
-    'public/assets/partners/android.png',
-    'public/assets/partners/basecamp.png',
-    'public/assets/partners/airbnb.png',
-    'public/assets/partners/ibm.png',
+    '/assets/partners/apple-store.png',
+    '/assets/partners/apiary.png',
+    '/assets/partners/android.png',
+    '/assets/partners/basecamp.png',
+    '/assets/partners/airbnb.png',
+    '/assets/partners/ibm.png',
 ]
 
 export const Partners = () => {

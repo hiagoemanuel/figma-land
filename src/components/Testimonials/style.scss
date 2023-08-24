@@ -1,0 +1,56 @@
+@use '../../style/mixins' as *;
+@use '../../style/variables';
+
+.testimonials {
+    @include section-size;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.testimonials__title {
+    font-size: 51px;
+    font-weight: 400;
+}
+
+.testimonials__feedback {
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feedback {
+    max-width: 430px;
+    padding: 40px;
+    border: 1px solid variables.$light-background;
+    border-radius: 10px;
+
+    .feedback__client {
+        .client__avatar {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        margin-bottom: 30px;
+
+        display: flex;
+        gap: 15px;
+
+        span {
+            font-size: 12px;
+        }
+    }
+
+}
+
+@media (max-width: 750px) {
+    .testimonials__feedback {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
