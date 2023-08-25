@@ -21,7 +21,7 @@ export const Partners = () => {
             <div className='partners__list'>
                 {
                     partners.map((partner, index) => (
-                        <img src={partner} alt="partner-logo" key={index} />
+                        <img className='partners__logo' src={partner} alt="partner-logo" key={index} />
                     ))
                 }
             </div>

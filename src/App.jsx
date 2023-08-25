@@ -5,6 +5,7 @@ import { Contents } from "./components/Contents"
 import { Gallery } from "./components/Gallery"
 import { Partners } from "./components/Partners"
 import { Testimonials } from "./components/Testimonials"
+import { CTA } from "./components/CTA"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Gallery />
       <Partners />
       <Testimonials />
+      <CTA />
     </main>
   )
 }

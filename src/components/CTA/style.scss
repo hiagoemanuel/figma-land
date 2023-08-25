@@ -1,0 +1,47 @@
+@use '../../style/mixins' as *;
+@use '../../style/variables';
+
+.cta {
+    @include section-size;
+
+    padding: 0px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta__container {
+    max-width: 1220px;
+    border-radius: 35px;
+
+    display: flex;
+
+    overflow: hidden;
+    background-color: variables.$second-text;
+}
+
+.cta__left-content {
+    padding: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+
+    .cta__title {
+        line-height: 62px;
+        font-size: 52px;
+        font-weight: 500;
+    }
+
+    .cta__link {
+        @include link-button(variables.$primary-color);
+
+        padding: 14px 65px;
+    }
+}
+
+.cta__illustration {
+    align-self: flex-end;
+}

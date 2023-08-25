@@ -20,6 +20,10 @@
     justify-content: center;
     gap: 75px;
     flex-wrap: wrap;
+
+    .partners__logo {
+        height: 100%;
+    }
 }
 
 .partners__button {
