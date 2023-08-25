@@ -6,6 +6,7 @@ import { Gallery } from "./components/Gallery"
 import { Partners } from "./components/Partners"
 import { Testimonials } from "./components/Testimonials"
 import { CTA } from "./components/CTA"
+import { Footer } from "./components/Footer"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Partners />
       <Testimonials />
       <CTA />
+      <Footer />
     </main>
   )
 }
